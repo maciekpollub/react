@@ -1,14 +1,14 @@
 import React from 'react';
 import {Nav, NavItem} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const Menu = () => {
 
     return (
         <ul>
-            <li><Link to = "/">Home</Link></li>
-            <li><Link to = "/profile">Profile</Link></li>
-            <li><Link to ="/dashboard">Dashboard</Link></li>
+            <li><NavLink activeClassName = "selected" exact to = "/">Home</NavLink></li>
+            <li><NavLink activeClassName = "selected" to = "/profile">Profile</NavLink></li>
+            <li><NavLink activeClassName = "selected" to ="/dashboard">Dashboard</NavLink></li>
         </ul>
         /* <Nav bsStyle="pills" activeKey={0} stacked = {true}>
             <NavItem eventKey={0}>Home</NavItem>
