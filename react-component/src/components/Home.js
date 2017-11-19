@@ -9,18 +9,18 @@ const Home = () => {
     };
     return (
         <div>
-            //przycisk wywołujący funkcję handleClick
+            (//przycisk wywołujący funkcję handleClick)
             <Button bsStyle = "primary" bsSize = "small" onClick = {handleClick}>Button</Button>
-            /*tworzenie kolumn w react-bootstrapie...*/
+            (/*tworzenie kolumn w react-bootstrapie...*/)
             <Grid>
                 <Row className='show-grid'>
                     <Col xs={12} md={8}>Column no 1</Col>
                     <Col xs={12} md={4}>Column no 2</Col>
                 </Row>
             </Grid>
-            //teraz formularz...
+            (//teraz formularz...)
             <form>
-                <FormGroup>//pierwszy element formularza input//
+                <FormGroup>(//pierwszy element formularza input)
                     <ControlLabel>
                         label
                     </ControlLabel>
@@ -30,11 +30,11 @@ const Home = () => {
                     </HelpBlock>
                 </FormGroup>
 
-                <FormGroup>//kolejny element formularza: checkbox
+                <FormGroup>(//kolejny element formularza: checkbox)
                     <Checkbox inline>1</Checkbox>
                 </FormGroup>
 
-                <FormGroup>//lista rozwijalna..
+                <FormGroup>(//lista rozwijalna..)
                     <FormControl componentClass="select" placeholder="select">
                         <option value="select">option1</option>
                         <option value="other">option2</option>
