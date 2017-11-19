@@ -6,8 +6,7 @@ import Dashboard from './Dashboard'
 import Home from './Home'
 import{/*importujemy teraz routera*/
     BrowserRouter as Router,
-    Route,
-    Link
+    Route
 } from 'react-router-dom';
 
 const App = () => {
@@ -15,15 +14,11 @@ const App = () => {
         /*wbudowany komponent react router'owy*/
         <Router>
             <div>
-                <ul>
-                    <li><Link to = "/">Home</Link></li>
-                    <li><Link to = "/profile">Profile</Link></li>
-                    <li><Link to ="/dashboard">Dashboard</Link></li>
-                </ul>
-
+                <Header/>
                 <Route exact path="/" component={Home}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/dashboard" component={Dashboard}/>
+                <Footer/>
             </div>
         </Router>
 
