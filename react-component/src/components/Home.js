@@ -1,4 +1,6 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
+
 
 const Home = () => {
     const handleClick = () => {//def funkcji callback
@@ -6,9 +8,8 @@ const Home = () => {
     };
     return (
         <div>
-
-
-            <button onClick = {handleClick}>Button</button>/*
+            /*przycisk wywołujący funkcję handleClick*/
+            <Button bsStyle = "primary" onClick = {handleClick}>Button</Button>
         </div>
     );
 
